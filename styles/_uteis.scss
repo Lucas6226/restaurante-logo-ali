@@ -1,0 +1,87 @@
+$vermelho: var(--vermelho);
+$amarelo: var(--amarelo);
+
+$preto: var(--preto);
+$branco: var(--branco);
+$cinza: var(--cinza);
+
+$sombra: var(--sombra);
+
+
+@function addict($array, $key, $value) {
+    @return map-merge($array, ($key : $value));
+}
+
+@mixin tamanho($alt: x, $lar: x) {
+    @if $alt != x {
+        height: $alt;
+    }
+
+    @if $lar != x {
+        width: $lar;
+    }
+}
+
+@mixin flex($direction: row, $aling: center, $justfy: space-between, $gap: 0) { 
+    display: flex;
+    gap: $gap;
+
+    @if $direction == column {
+        flex-direction: column;
+    } @else if $direction == column-reverse {
+        flex-direction: column-reverse;
+    } @else if $direction == row {
+        flex-direction: row;
+    } @else if $direction == row-reverse {
+        flex-direction: row-reverse;
+    } @else {
+        background-color: red;
+        content: '[ERRO]';
+    }
+
+    @if $aling == center {
+        align-items: center;
+    } @else {
+        background-color: red;
+        content: '[ERRO]';
+    }
+
+    @if $justfy == space-between {
+        justify-content: space-between;
+    } @else if $justfy == space-around {
+        justify-content: space-around;
+    } @else if $justfy == space-evenly {
+        justify-content: space-evenly;
+    } @else if $justfy == right {
+        justify-content: right;
+    } @else if $justfy == left {
+        justify-content: left;
+    } @else if $justfy == center {
+        justify-content: center;
+    } @else {
+        background-color: red;
+        content: '[ERRO]';
+    }
+}
+
+@mixin position($position, $top: no, $bottom: no, $left: no, $right: no) {
+    position: $position;
+    @if $top != no {
+        top: $top;
+    } 
+    @if $bottom != no {
+        bottom: $bottom;
+    }
+    @if $left != no {
+        left: $left;
+    }
+    @if $right != no {
+        right: $right;
+    }
+}
+
+@mixin centralizar() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
