@@ -19,7 +19,7 @@ export default function RodaPe() {
                             Fale conosco
                         </div>
                     </a>
-                    <p id='recado-redes'>nos acompanhe pelas nossas <Cor cor='rgb(230, 196, 0)'>redes</Cor>.</p>
+                    <p>nos acompanhe pelas nossas <Cor cor='rgb(230, 196, 0)'>redes</Cor>.</p>
                     <div id='redes'>
                         <a href="https://www.instagram.com/logoaqui_bar/" target='_blank'><BsInstagram className='icons'/></a>
                         <a href="https://twitter.com/LogoAqui_Bar" target='_blank'><FaTwitterSquare className='icons'/></a>

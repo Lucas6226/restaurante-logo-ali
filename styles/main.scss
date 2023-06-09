@@ -394,16 +394,16 @@ a {
 
                 padding: 0px 5vw;
 
+                p {
+                    display: none;
+                }
+
                 #button {
                     transition-duration: .25s;
-
+                    
                     &:hover {
                         transform: translateY(-20%);
                     }
-                }
-
-                #recado-redes {
-                    display: none;
                 }
 
                 #redes {

@@ -375,14 +375,14 @@ a {
     width: 100%;
     padding: 0px 5vw;
   }
+  body footer #contatos p {
+    display: none;
+  }
   body footer #contatos #button {
     transition-duration: 0.25s;
   }
   body footer #contatos #button:hover {
     transform: translateY(-20%);
-  }
-  body footer #contatos #recado-redes {
-    display: none;
   }
   body footer #contatos #redes {
     margin: 0;
