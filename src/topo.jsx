@@ -15,7 +15,7 @@ export default function Topo() {
     
     function esconder() {
         
-        setScale(2.2)
+        setScale(2.2)   
         setLargura('-100%')
         setTimeout(function () {
             setScale(1)
@@ -36,7 +36,7 @@ export default function Topo() {
 
     return (
         <header>
-            <h1><a href="http://127.0.0.1:5500/projetos-proprios/logo-ali-antigo/index.html"><Cor cor='rgb(230, 196, 0)'>Logo</Cor><Cor cor='red'>Ali</Cor><Cor cor='rgb(230, 196, 0)'>.</Cor></a></h1>
+            <h1><a href="https://lucas6226.github.io/Logo-Ali/"><Cor cor='rgb(230, 196, 0)'>Logo</Cor><Cor cor='red'>Ali</Cor><Cor cor='rgb(230, 196, 0)'>.</Cor></a></h1>
             <div>
                 <div>
                     <AiOutlineMenu id='AiOutlineMenu' onClick={mostrar} style={conteinerStyle_MenuIcon}/>
@@ -48,7 +48,7 @@ export default function Topo() {
                         <li><a href="#sobre" onClick={esconder} >Sobre</a></li>
                         <li><a href="#lugar" onClick={esconder} >Lugar</a></li>
                         <li><a href="#menu" onClick={esconder} >Menu</a></li>
-                        <li><a href="#contato" onClick={esconder} >Contato</a></li>
+                        <li><a href="#contatos" onClick={esconder} >Contato</a></li>
                     </ul>
                 </nav>
             </div>

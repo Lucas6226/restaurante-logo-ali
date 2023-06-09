@@ -398,6 +398,44 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
+  body header {
+    padding: 0px 4em;
+  }
+  body header div #AiOutlineMenu {
+    display: none;
+  }
+  body header div nav {
+    height: 90%;
+    width: 100%;
+    position: static;
+  }
+  body header div nav #BiArrowFromRight {
+    display: none;
+  }
+  body header div nav ul {
+    display: flex;
+    gap: 4em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+  }
+  body header div nav ul li {
+    font-size: 28px;
+    font-weight: 500;
+    z-index: 2;
+  }
+  body header div nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(130deg, var(--amarelo), var(--vermelho));
+    transition-duration: 0.15s;
+  }
+  body header div nav ul li a:hover::after {
+    width: 100%;
+  }
   body main #inicio {
     display: flex;
     gap: 0;

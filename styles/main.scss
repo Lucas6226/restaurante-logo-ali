@@ -429,6 +429,50 @@ a {
 
 @media screen and (min-width: 1024px) {
     body {
+
+        header {
+            padding: 0px 4em;
+
+            div {
+
+                #AiOutlineMenu {
+                    display: none;
+                }
+                
+                nav {
+                    @include tamanho(90%, 100%);
+                    position: static;
+
+                    #BiArrowFromRight {
+                        display: none;
+                    }
+
+                    ul {
+                        @include flex(row, center, space-between, 4em);
+                        background-color: $branco;
+
+                        li {
+                            font-size: 28px;
+                            font-weight: 500;
+                            z-index: 2;
+
+                            a::after {
+                                content: '';
+                                display: block;
+                                width: 0%;
+                                height: 2px;
+                                background-image: linear-gradient(130deg, $amarelo, $vermelho);
+                                transition-duration: .15s;
+                            }
+                            a:hover::after {
+                                width: 100%
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         main {
             #inicio {
                 @include flex(row, center);
