@@ -326,6 +326,9 @@ a {
     border-radius: 20px;
     box-shadow: 2px 3px 11px rgba(0, 0, 0, 0.451);
   }
+  body footer #contatos #button #button-icon {
+    margin-left: 0.2em;
+  }
   body footer #contatos #redes {
     display: flex;
     gap: 4em;
