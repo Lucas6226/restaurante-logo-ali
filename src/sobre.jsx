@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { HiOutlineArrowCircleLeft, HiOutlineArrowCircleRight } from 'react-icons/hi'
+import { HiOutlineArrowCircleRight } from "react-icons/hi";
+import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 
+import { IMAGES } from "./images.js"
 
 export default function Sobre() {
     const [largura_paragrafo_1, setLargura_paragrafo_1] = useState('0%')
@@ -20,8 +22,8 @@ export default function Sobre() {
 
     const dados = [
         {
-            texto: 'Quibusdam aut sed harum dolorem voluptates deleniti at adipisci veritatis tempora voluptatem error quod iste, iure, ab, suscipit quos similique et saepe.', 
-            img: '',
+            texto: 'texto-1', 
+            img: IMAGES.carne,
             style_paragrafo: {
                 width: largura_paragrafo_1,
                 padding: padding_paragrafo_1
@@ -45,7 +47,7 @@ export default function Sobre() {
         },
         {
             texto: 'texto-2',
-            img: '',
+            img: IMAGES.donuts,
             style_paragrafo: {
                 width: largura_paragrafo_2,
                 padding: padding_paragrafo_2
@@ -71,7 +73,7 @@ export default function Sobre() {
         },
         {
             texto: 'texto3',
-            img: '',
+            img: IMAGES.torneiras,
             style_paragrafo: {
                 width: largura_paragrafo_3,
                 padding: padding_paragrafo_3

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Cor from "./praticos.jsx";
-import { AiOutlineMenu } from 'react-icons/ai'
-import { BiArrowFromRight } from 'react-icons/bi'
+import { AiOutlineMenu } from "react-icons/ai";
+import { BiArrowFromRight } from "react-icons/bi";
 
 export default function Topo() {
     const [largura, setLargura] = useState('-100%')

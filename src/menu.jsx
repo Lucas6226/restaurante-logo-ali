@@ -1,4 +1,6 @@
 import React from "react";
+import { IMAGES } from "./images"
+
 
 export default function Menu() {
     
@@ -6,20 +8,20 @@ export default function Menu() {
         {
             id: "0",
             name: 'pratos', 
-            back_img: '../assets/pratos.svg',
+            back_img: IMAGES.pratos,
             linK: ''
         },
         {
             id: "1",
             name: 'doçes', 
-            back_img: '../assets/doçes.svg',
+            back_img: IMAGES.doces,
             linK: ''
         },
         {
             id: "2",
             name: 'drinks', 
-            back_img: '../assets/drinks.svg',
-            linK: '../drinks/drinks.html'
+            back_img: IMAGES.drinks,
+            linK: ''
         }
     ]
     

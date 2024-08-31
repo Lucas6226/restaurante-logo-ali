@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -24,8 +23,8 @@ html {
   overflow-x: hidden;
 }
 
-h1, h1 * {
-  font-family: "Bungee Shade", cursive;
+h1 {
+  font-family: "Bungee Shade", sans-serif;
 }
 
 ul, ol {
@@ -69,6 +68,9 @@ a {
     display: block;
     position: relative;
     top: -12%;
+  }
+  body header h1 * {
+    font-family: "Bungee Shade";
   }
   body header div {
     position: relative;
@@ -140,7 +142,7 @@ a {
   }
   body main #inicio #button {
     height: clamp(10px, 7vh, 125px);
-    width: clamp(75px, 30vw, 250px);
+    width: clamp(110px, 30vw, 250px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,6 +189,10 @@ a {
     left: 0%;
     transition-duration: 0.6s;
   }
+  body main #sobre .caixa .imagem img {
+    height: 100%;
+    width: 100%;
+  }
   body main #sobre .caixa .informacao {
     height: 100%;
     width: 0%;
@@ -224,8 +230,19 @@ a {
   body main #img-lugar {
     height: 10em;
     width: 100vw;
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    background-color: red;
+    content: "[ERRO]";
+    justify-content: center;
     background-color: blue;
     margin-bottom: 1.2em;
+  }
+  body main #img-lugar img {
+    height: 100%;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   body main #menu {
     display: flex;
@@ -245,8 +262,8 @@ a {
     justify-content: space-between;
     background-color: var(--branco);
     padding: 1em;
-    border-top: 1px solid rgb(196, 196, 196);
-    border-bottom: 1px solid rgb(196, 196, 196);
+    border-top: 5px solid rgb(196, 196, 196);
+    border-bottom: 5px solid rgb(196, 196, 196);
     border-radius: 15px;
     position: relative;
     transition-duration: 0.2s;
@@ -273,16 +290,6 @@ a {
   body main #menu .card div p {
     font-size: 1.2em;
     font-weight: 600;
-  }
-  body main #menu .card:hover {
-    border-left: 0.5em solid var(--vermelho);
-    transform: scale(1.1);
-  }
-  body main #menu .card:hover h2 {
-    color: var(--vermelho);
-  }
-  body main #menu .card:hover p {
-    color: var(--amarelo);
   }
   body footer {
     height: 70vh;
@@ -315,7 +322,7 @@ a {
   }
   body footer #contatos #button {
     height: clamp(50px, 5vh, 200px);
-    width: clamp(50px, 30vw, 250px);
+    width: clamp(130px, 30vw, 250px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,5 +463,45 @@ a {
   }
   body main #lugar #paragrafo {
     font-size: 4vh;
+  }
+  body main #menu {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5vw 0px 5vw;
+  }
+  body main #menu .card {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    width: 25vw;
+  }
+  body main #menu .card div {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body main #menu .card:hover {
+    border-right: 1px solid rgb(196, 196, 196);
+    border-left: 1px solid rgb(196, 196, 196);
+    border-top: 0.5em solid var(--vermelho);
+    border-bottom: 0.5em solid var(--vermelho);
+    transform: scale(1.1);
+  }
+  body main #menu .card:hover h2 {
+    color: var(--vermelho);
+  }
+  body main #menu .card:hover p {
+    color: var(--amarelo);
+  }
+  body main #menu .card:hover .background-icons {
+    filter: opacity(80%);
   }
 }/*# sourceMappingURL=main.css.map */
